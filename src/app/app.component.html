@@ -1,0 +1,2 @@
+<app-chart *ngIf="data" [data]="data"  (onClick)="onChartClick($event)" ></app-chart>
+<app-heirarchy-tree *ngIf="data && entry" [data]="data" [entry]="entry"></app-heirarchy-tree>

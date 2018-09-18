@@ -1,0 +1,42 @@
+[{
+    "id": 1,
+    "name": "EMI-Authentication",
+    "type" : "Service",
+    "dependantIds": []
+  },
+  {
+    "id": 2,
+    "name": "Statistics-MarketSize-Service",
+    "type" : "Service",
+    "dependantIds": [1,3]
+  },
+  {
+    "id": 3,
+    "name": "Passport-Authorisation-Service",
+    "type" : "Service",
+    "dependantIds": [ 1]
+  },
+  {
+    "id": 4,
+    "name": "Passport-Catalog-Service",
+    "type" : "Service",
+    "dependantIds": [ 1,3]
+  },
+  {
+    "id": 5,
+    "name": "Passport-Magazine-Service",
+    "type" : "Service",
+    "dependantIds": [1,4]
+  },
+  {
+    "id": 6,
+    "name": "Passport-Magazine-UI",
+    "type" : "Client",
+    "dependantIds": [5]
+  },
+  {
+    "id": 7,
+    "name": "Local Company Profile",
+    "type" : "Client",
+    "dependantIds": [1,2]
+  }]
